@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="woJ-BK-SnQ">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="YKC-9D-fGX">
+            <objects>
+                <viewController storyboardIdentifier="Initial" automaticallyAdjustsScrollViewInsets="NO" id="woJ-BK-SnQ" customClass="TaskGroupDetailsViewController" customModule="DailyPower" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kKr-70-3MS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e8v-41-Hdu" customClass="PlannerNewItemTextField" customModule="DailyPower" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                <color key="backgroundColor" red="0.19617590308189392" green="0.69177526235580444" blue="0.28208434581756592" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="HWc-p3-uDq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="paletteBackgroundColor" value="auxBackground1"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="paletteFont" value="style1"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="paletteTextColor" value="subtitle"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="paletteTintColor" value="main"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gMy-fZ-oDy">
+                                <rect key="frame" x="0.0" y="50" width="375" height="524"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="paletteBackgroundColor" value="background"/>
+                                </userDefinedRuntimeAttributes>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cUm-3X-SlA">
+                                <rect key="frame" x="177.5" y="277" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVv-iZ-fh4" customClass="LoadingView" customModule="DailyPower" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IPU-ZT-f8S" firstAttribute="bottom" secondItem="jVv-iZ-fh4" secondAttribute="bottom" id="0Ix-D0-qkU"/>
+                            <constraint firstItem="cUm-3X-SlA" firstAttribute="centerX" secondItem="IPU-ZT-f8S" secondAttribute="centerX" id="1KC-43-GNu"/>
+                            <constraint firstItem="jVv-iZ-fh4" firstAttribute="top" secondItem="IPU-ZT-f8S" secondAttribute="top" id="OtO-K7-MyY"/>
+                            <constraint firstItem="gMy-fZ-oDy" firstAttribute="top" secondItem="e8v-41-Hdu" secondAttribute="bottom" constant="2" id="PgG-NJ-DM5"/>
+                            <constraint firstItem="IPU-ZT-f8S" firstAttribute="trailing" secondItem="jVv-iZ-fh4" secondAttribute="trailing" id="R2e-a4-RwD"/>
+                            <constraint firstItem="IPU-ZT-f8S" firstAttribute="trailing" secondItem="gMy-fZ-oDy" secondAttribute="trailing" id="Tav-ww-oOG"/>
+                            <constraint firstItem="cUm-3X-SlA" firstAttribute="centerY" secondItem="IPU-ZT-f8S" secondAttribute="centerY" id="VdK-5Z-KBc"/>
+                            <constraint firstItem="jVv-iZ-fh4" firstAttribute="leading" secondItem="IPU-ZT-f8S" secondAttribute="leading" id="Zvr-r1-ELA"/>
+                            <constraint firstItem="e8v-41-Hdu" firstAttribute="leading" secondItem="IPU-ZT-f8S" secondAttribute="leading" id="ecC-5Q-xdl"/>
+                            <constraint firstItem="IPU-ZT-f8S" firstAttribute="trailing" secondItem="e8v-41-Hdu" secondAttribute="trailing" id="gYA-Xq-7yg"/>
+                            <constraint firstItem="gMy-fZ-oDy" firstAttribute="leading" secondItem="IPU-ZT-f8S" secondAttribute="leading" id="uAq-Lw-oYf"/>
+                            <constraint firstItem="IPU-ZT-f8S" firstAttribute="bottom" secondItem="gMy-fZ-oDy" secondAttribute="bottom" id="xCF-G4-W9A"/>
+                            <constraint firstItem="e8v-41-Hdu" firstAttribute="top" secondItem="IPU-ZT-f8S" secondAttribute="top" id="yc8-De-TY6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IPU-ZT-f8S"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="paletteBackgroundColor" value="background"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="XJK-Ny-uJk">
+                        <barButtonItem key="backBarButtonItem" title=" " id="hQm-vP-nga"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="cUm-3X-SlA" id="pfQ-hm-93M"/>
+                        <outlet property="loadingView" destination="jVv-iZ-fh4" id="UfN-hm-0rl"/>
+                        <outlet property="newItemTextField" destination="e8v-41-Hdu" id="Elz-HO-p85"/>
+                        <outlet property="tableView" destination="gMy-fZ-oDy" id="QpD-ev-cVv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJM-GT-hGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97" y="161"/>
+        </scene>
+    </scenes>
+</document>

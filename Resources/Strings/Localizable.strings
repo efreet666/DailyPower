@@ -1,0 +1,115 @@
+//
+//  Localizable.strings
+//  DailyPower
+//
+//  Created by Alexey N. Yukin on 31.01.2019.
+//  Copyright © 2019 mobile.Simbirsoft. All rights reserved.
+//
+
+// Табы
+"main_tabbar_planner" = "Цели";
+"main_tabbar_nutrition" = "Питание";
+"main_tabbar_workouts" = "Next";
+"main_tabbar_motivation" = "Разум";
+"main_tabbar_profile" = "Профиль";
+
+// Заголовки документов
+"document_title_user_agreement" = "Пользовательское соглашение";
+"document_title_privacy_policy" = "Политика конфиденциальности";
+
+// Экран авторизации
+"auth_screen_title" = "ВХОД В АККАУНТ";
+"auth_screen_email_placeholder" = "E-Mail";
+"auth_screen_password_placeholder" = "Пароль";
+"auth_screen_password_recovery" = "Забыли пароль?";
+"auth_screen_login" = "Войти";
+"auth_screen_conditions_full" = "Нажимая «Войти», Вы соглашаетесь с пользовательским соглашением и политикой конфиденциальности.";
+"auth_screen_conditions_user_agreement" = "пользовательским соглашением";
+"auth_screen_conditions_privacy_policy" = "политикой конфиденциальности";
+"auth_screen_registration_full" = "Нет аккаунта? Зарегистрироваться.";
+"auth_screen_registration" = "Зарегистрироваться";
+
+// Экран "Цели"
+"planner_screen_title" = "Цели";
+"planner_screen_new_taskgroup" = "Новый список";
+"planner_screen_edit" = "Изменить";
+"planner_screen_delete" = "Удалить";
+"planner_screen_loading" = "Загрузка целей";
+"planner_screen_loading_error" = "Произошла ошибка при загрузке контента. Попробуйте повторить позже.";
+"planner_screen_retry_loading" = "Повторить";
+"planner_screen_delete_taskgroup_message" = "Вы действительно хотите удалить цель?";
+"planner_screen_limit_reached_message" = "Превышено максимальное количество целей.";
+
+// Экран "Задачи"
+"taskgroup_screen_new_task" = "Новая задача";
+"taskgroup_screen_edit" = "Изменить";
+"taskgroup_screen_delete" = "Удалить";
+"taskgroup_screen_loading" = "Загрузка задач";
+"taskgroup_screen_loading_error" = "Произошла ошибка при загрузке контента. Попробуйте повторить позже.";
+"taskgroup_screen_retry_loading" = "Повторить";
+"taskgroup_screen_delete_task_message" = "Вы действительно хотите удалить задачу?";
+"taskgroup_screen_limit_reached_message" = "Превышено максимальное количество задач.";
+
+// Экран "Питание"
+"nutrition_screen_title" = "Питание";
+
+// Экран "Тренировки"
+"workouts_screen_title" = "Тренировки";
+
+// Экран "Разум"
+"motivation_screen_title" = "Разум";
+"motivation_screen_loading" = "Загрузка контента";
+"motivation_screen_loading_error" = "Произошла ошибка при загрузке контента. Попробуйте повторить позже.";
+"motivation_screen_retry_loading" = "Повторить";
+
+// Экран "Профиль"
+"profile_screen_title" = "Профиль";
+"profile_screen_photos" = "Фотографии";
+"profile_screen_loading" = "Загрузка профиля";
+"profile_screen_loading_error" = "Произошла ошибка при загрузке профиля. Попробуйте повторить позже.";
+"profile_screen_retry_loading" = "Повторить";
+"profile_screen_photo_source_library" = "Выбрать фото из библиотеки";
+"profile_screen_photo_source_camera" = "Сфотографировать камерой";
+"profile_screen_photo_source_cancel" = "Отмена";
+
+// Ошибки
+"error_message_unknown_internal_error" = "Произошла неизвестная внутренняя ошибка.";
+"error_message_unknown" = "Произошла неизвестная ошибка.";
+"error_message_no_internet" = "Отсутствует соединение с интернетом.";
+"error_message_server_unavailable" = "Сервер недоступен.";
+"error_message_server_insecure_connection" = "Не удалось установить безопасное соединение с сервером.";
+"error_message_request_failed" = "Не удалось выполнить запрос.";
+"error_message_request_failed_no_token" = "Не удалось выполнить запрос, отсутствует токен.";
+"error_message_bad_credentials" = "Неверный логин или пароль.";
+"error_message_response_mapping_error" = "Получен некорректный ответ сервера.";
+"error_message_cannot_build_request" = "Не удалось сформировать запрос к серверу.";
+"error_message_unknown_server_error" = "Сервер вернул ошибку с неизвестным кодом %d.";
+"error_message_invalid_token" = "Выполнен запрос с некорректным токеном.";
+"error_message_token_expired" = "Срок действия токена истек.";
+"error_message_internal_server_error" = "Произошла неизвестная внутренняя ошибка сервера.";
+"error_message_invalid_parameters" = "Выполнен запрос с неверным набором параметров.";
+"error_message_user_not_found" = "Указанный аккаунт не зарегистрирован в системе.";
+"error_message_user_already_exists" = "Указанный аккаунт уже зарегистрирован в системе.";
+"error_message_unknown_validation_error" = "Произошла неизвестная ошибка валидации данных.";
+"error_message_wrong_email_format" = "Поле «E-Mail» имеет неверный формат.";
+"error_message_wrong_password_format" = "Поле «Пароль» содержит недопустимые символы.";
+"error_message_wrong_data_format" = "Неверный формат данных.";
+"error_message_wrong_email_length" = "Поле «E-Mail» должно содержать от 6-ти до 64-х символов.";
+"error_message_wrong_password_length" = "Поле «Пароль» должно содержать от 6-ти до 20-ти символов.";
+"error_message_wrong_data_length" = "Неверная длина данных.";
+
+"alert_title_error" = "Ошибка";
+"alert_title_message" = "Сообщение";
+
+"alert_button_ok" = "OK";
+"alert_button_nope" = "Нет";
+"alert_button_yes" = "Да";
+"alert_button_cancel" = "Отменить";
+"alert_button_retry" = "Повторить";
+
+// Разное
+"more_string" = "ещё";
+
+// Плеер
+"player_error" = "Произошла ошибка при воспроизведении контента. Попробуйте повторить позже.";
+"player_retry" = "Повторить";

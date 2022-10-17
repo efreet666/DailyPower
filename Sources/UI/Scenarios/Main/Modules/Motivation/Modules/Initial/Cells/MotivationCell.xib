@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" reuseIdentifier="MotivationCell" id="H1B-gT-wrC" customClass="MotivationCell" customModule="DailyPower" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndW-Ej-4ho" customClass="VideoViewStyle2" customModule="DailyPower" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ndW-Ej-4ho" secondAttribute="height" multiplier="16:9" id="LjE-S0-MR3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="paletteCornerRadius" value="mainCornerRadius"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ndW-Ej-4ho" secondAttribute="trailing" id="JHm-gE-yVP"/>
+                <constraint firstItem="ndW-Ej-4ho" firstAttribute="top" secondItem="H1B-gT-wrC" secondAttribute="top" id="QZP-p7-o8q"/>
+                <constraint firstAttribute="bottom" secondItem="ndW-Ej-4ho" secondAttribute="bottom" priority="750" id="d8N-4T-62l"/>
+                <constraint firstItem="ndW-Ej-4ho" firstAttribute="leading" secondItem="H1B-gT-wrC" secondAttribute="leading" id="q41-20-Qlj"/>
+            </constraints>
+            <connections>
+                <outlet property="videoView" destination="ndW-Ej-4ho" id="91M-J3-gCF"/>
+            </connections>
+            <point key="canvasLocation" x="331" y="440"/>
+        </collectionViewCell>
+    </objects>
+</document>

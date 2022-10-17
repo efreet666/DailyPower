@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="woJ-BK-SnQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="YKC-9D-fGX">
+            <objects>
+                <viewController storyboardIdentifier="Initial" automaticallyAdjustsScrollViewInsets="NO" id="woJ-BK-SnQ" customClass="ProfileViewController" customModule="DailyPower" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kKr-70-3MS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lgy-Lh-EnG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile/avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Rzz-Ne-xoW">
+                                        <rect key="frame" x="32" y="16" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="8ZE-cf-hRQ"/>
+                                            <constraint firstAttribute="width" secondItem="Rzz-Ne-xoW" secondAttribute="height" multiplier="1:1" id="lia-y0-IIy"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="paletteCornerRadius" value="mainCornerRadius"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="paletteBackgroundColor" value="auxBackground2"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukx-hK-ls9">
+                                        <rect key="frame" x="88" y="27.5" width="255" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="paletteFont" value="style5"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="paletteTextColor" value="subtitle"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92455357140000005" green="0.65304129460000004" blue="0.2561383928" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ukx-hK-ls9" firstAttribute="centerY" secondItem="Lgy-Lh-EnG" secondAttribute="centerY" id="C05-Fq-CiR"/>
+                                    <constraint firstAttribute="trailing" secondItem="ukx-hK-ls9" secondAttribute="trailing" constant="32" id="Kuj-Tz-YT1">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="paletteConstant" value="mainHorizontalInset"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstItem="Rzz-Ne-xoW" firstAttribute="leading" secondItem="Lgy-Lh-EnG" secondAttribute="leading" constant="32" id="Qfl-yz-nhT">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="paletteConstant" value="mainHorizontalInset"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="76" id="ngP-cs-Kgg"/>
+                                    <constraint firstItem="ukx-hK-ls9" firstAttribute="leading" secondItem="Rzz-Ne-xoW" secondAttribute="trailing" constant="12" id="oWr-gc-7Wo"/>
+                                    <constraint firstItem="Rzz-Ne-xoW" firstAttribute="centerY" secondItem="Lgy-Lh-EnG" secondAttribute="centerY" id="rcM-xA-t1v"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="paletteBackgroundColor" value="auxBackground1"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWA-y9-xlg">
+                                <rect key="frame" x="32" y="96" width="311" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="paletteFont" value="style5"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="paletteTextColor" value="title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGF-oh-oXc" customClass="ProfilePhotoView" customModule="DailyPower" customModuleProvider="target">
+                                <rect key="frame" x="32" y="137" width="152" height="195.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YGF-oh-oXc" secondAttribute="height" multiplier="7:9" id="xto-My-exj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqI-1E-Ewm" customClass="ProfilePhotoView" customModule="DailyPower" customModuleProvider="target">
+                                <rect key="frame" x="191" y="137" width="152" height="195.5"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zF8-DC-ezL" customClass="LoadingView" customModule="DailyPower" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59140625000000002" green="0.72857142860000002" blue="0.32215401789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lgy-Lh-EnG" firstAttribute="trailing" secondItem="IPU-ZT-f8S" secondAttribute="trailing" id="4au-VF-q97"/>
+                            <constraint firstItem="Lgy-Lh-EnG" firstAttribute="leading" secondItem="IPU-ZT-f8S" secondAttribute="leading" id="58B-Mf-rHb"/>
+                            <constraint firstItem="YGF-oh-oXc" firstAttribute="top" secondItem="tWA-y9-xlg" secondAttribute="bottom" constant="20" id="6gC-Wf-WjN"/>
+                            <constraint firstItem="tWA-y9-xlg" firstAttribute="top" secondItem="Lgy-Lh-EnG" secondAttribute="bottom" constant="20" id="9dJ-r4-dtG"/>
+                            <constraint firstItem="YGF-oh-oXc" firstAttribute="leading" secondItem="tWA-y9-xlg" secondAttribute="leading" id="Ecf-MA-Jcb"/>
+                            <constraint firstItem="YGF-oh-oXc" firstAttribute="leading" secondItem="IPU-ZT-f8S" secondAttribute="leading" constant="32" id="FeK-jc-Sl0">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="paletteConstant" value="mainHorizontalInset"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="IPU-ZT-f8S" firstAttribute="trailing" secondItem="sqI-1E-Ewm" secondAttribute="trailing" constant="32" id="FmL-nG-oQs">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="paletteConstant" value="mainHorizontalInset"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="IPU-ZT-f8S" firstAttribute="trailing" secondItem="zF8-DC-ezL" secondAttribute="trailing" id="Iit-Ks-i1M"/>
+                            <constraint firstItem="zF8-DC-ezL" firstAttribute="leading" secondItem="IPU-ZT-f8S" secondAttribute="leading" id="LNr-0j-cvv"/>
+                            <constraint firstItem="sqI-1E-Ewm" firstAttribute="leading" secondItem="YGF-oh-oXc" secondAttribute="trailing" constant="7" id="RYX-fS-wqI"/>
+                            <constraint firstItem="sqI-1E-Ewm" firstAttribute="trailing" secondItem="tWA-y9-xlg" secondAttribute="trailing" id="UjI-PW-tqE"/>
+                            <constraint firstItem="sqI-1E-Ewm" firstAttribute="bottom" secondItem="YGF-oh-oXc" secondAttribute="bottom" id="XSj-QB-Hx8"/>
+                            <constraint firstItem="sqI-1E-Ewm" firstAttribute="top" secondItem="YGF-oh-oXc" secondAttribute="top" id="Y2L-Ka-8qS"/>
+                            <constraint firstItem="Lgy-Lh-EnG" firstAttribute="top" secondItem="IPU-ZT-f8S" secondAttribute="top" id="aOP-Pi-pxK"/>
+                            <constraint firstItem="zF8-DC-ezL" firstAttribute="top" secondItem="IPU-ZT-f8S" secondAttribute="top" id="jLY-qB-r8Y"/>
+                            <constraint firstItem="sqI-1E-Ewm" firstAttribute="width" secondItem="YGF-oh-oXc" secondAttribute="width" id="rWn-1O-AZq"/>
+                            <constraint firstItem="IPU-ZT-f8S" firstAttribute="bottom" secondItem="zF8-DC-ezL" secondAttribute="bottom" id="v3z-Ei-2AH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IPU-ZT-f8S"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="paletteBackgroundColor" value="background"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Pa5-8z-08F">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Ooi-Vg-6Wx"/>
+                        <barButtonItem key="rightBarButtonItem" image="Profile/settings" id="SAW-mo-Pbk"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="afterPhotoView" destination="sqI-1E-Ewm" id="mT0-Q5-OhZ"/>
+                        <outlet property="beforePhotoView" destination="YGF-oh-oXc" id="doZ-0S-uZa"/>
+                        <outlet property="emailLabel" destination="ukx-hK-ls9" id="wIH-Ze-ZW3"/>
+                        <outlet property="loadingView" destination="zF8-DC-ezL" id="2Tg-AG-S2C"/>
+                        <outlet property="photosLabel" destination="tWA-y9-xlg" id="Tnq-55-6YJ"/>
+                        <outlet property="settingsBarButtonItem" destination="SAW-mo-Pbk" id="Dt2-Na-T93"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJM-GT-hGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="160.56971514242881"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Profile/avatar" width="34" height="32"/>
+        <image name="Profile/settings" width="24" height="24"/>
+    </resources>
+</document>

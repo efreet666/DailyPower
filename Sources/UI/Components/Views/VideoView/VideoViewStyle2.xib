@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoViewStyle2" customModule="DailyPower" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="bTi-jA-pJt" id="bWF-wa-UuW"/>
+                <outlet property="playButton" destination="XVt-fm-n3s" id="8iD-Rw-YXW"/>
+                <outlet property="titleLabel" destination="gDq-fe-DNh" id="v22-b9-BEB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bTi-jA-pJt" customClass="RemoteImageView" customModule="DailyPower" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                </imageView>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uT1-M6-0xC" userLabel="Dimmer">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                    <color key="backgroundColor" red="1" green="0.82393973210000004" blue="0.40544084819999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="paletteBackgroundColor" value="dimmed"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVt-fm-n3s">
+                    <rect key="frame" x="136" y="66" width="48" height="48"/>
+                    <state key="normal" image="Common/play"/>
+                </button>
+                <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWs-Rx-9CU" userLabel="Spacer">
+                    <rect key="frame" x="0.0" y="114" width="320" height="23"/>
+                    <color key="backgroundColor" red="0.59140625000000002" green="0.72857142860000002" blue="0.32215401789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDq-fe-DNh">
+                    <rect key="frame" x="16" y="137" width="288" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ES-YF-YX6" userLabel="Spacer">
+                    <rect key="frame" x="0.0" y="157.5" width="320" height="22.5"/>
+                    <color key="backgroundColor" red="0.59140625000000002" green="0.72857142860000002" blue="0.32215401789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="uT1-M6-0xC" firstAttribute="bottom" secondItem="bTi-jA-pJt" secondAttribute="bottom" id="1LD-MS-Le7"/>
+                <constraint firstAttribute="trailing" secondItem="bTi-jA-pJt" secondAttribute="trailing" id="7Th-sq-S2g"/>
+                <constraint firstAttribute="trailing" secondItem="gWs-Rx-9CU" secondAttribute="trailing" id="8dR-hf-8io"/>
+                <constraint firstItem="gDq-fe-DNh" firstAttribute="top" secondItem="gWs-Rx-9CU" secondAttribute="bottom" id="8ob-LU-ifI"/>
+                <constraint firstAttribute="trailing" secondItem="gDq-fe-DNh" secondAttribute="trailing" constant="16" id="919-SU-gA8"/>
+                <constraint firstItem="gWs-Rx-9CU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EuB-Sg-I9q"/>
+                <constraint firstItem="uT1-M6-0xC" firstAttribute="leading" secondItem="bTi-jA-pJt" secondAttribute="leading" id="HPA-te-RCl"/>
+                <constraint firstItem="uT1-M6-0xC" firstAttribute="top" secondItem="bTi-jA-pJt" secondAttribute="top" id="IVu-5w-Sz9"/>
+                <constraint firstItem="9ES-YF-YX6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jd9-QY-ltM"/>
+                <constraint firstItem="bTi-jA-pJt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qf4-Xu-YBC"/>
+                <constraint firstItem="gWs-Rx-9CU" firstAttribute="top" secondItem="XVt-fm-n3s" secondAttribute="bottom" id="RLk-uw-jOj"/>
+                <constraint firstItem="9ES-YF-YX6" firstAttribute="height" secondItem="gWs-Rx-9CU" secondAttribute="height" id="Rm3-1m-Q6B"/>
+                <constraint firstItem="bTi-jA-pJt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YOO-2H-YaA"/>
+                <constraint firstItem="9ES-YF-YX6" firstAttribute="top" secondItem="gDq-fe-DNh" secondAttribute="bottom" id="ZcT-CW-Y1Q"/>
+                <constraint firstAttribute="bottom" secondItem="bTi-jA-pJt" secondAttribute="bottom" id="guD-LN-hD2"/>
+                <constraint firstAttribute="bottom" secondItem="9ES-YF-YX6" secondAttribute="bottom" id="hJJ-YV-jhG"/>
+                <constraint firstItem="XVt-fm-n3s" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hLt-6l-it6"/>
+                <constraint firstItem="XVt-fm-n3s" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jIV-5L-Pci"/>
+                <constraint firstItem="gDq-fe-DNh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="kdV-xU-xkM"/>
+                <constraint firstAttribute="trailing" secondItem="9ES-YF-YX6" secondAttribute="trailing" id="l82-RA-pBz"/>
+                <constraint firstItem="uT1-M6-0xC" firstAttribute="trailing" secondItem="bTi-jA-pJt" secondAttribute="trailing" id="vYV-Ek-eMd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="110.19490254872565"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Common/play" width="48" height="48"/>
+    </resources>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="woJ-BK-SnQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="YKC-9D-fGX">
+            <objects>
+                <viewController storyboardIdentifier="Initial" automaticallyAdjustsScrollViewInsets="NO" id="woJ-BK-SnQ" customClass="MotivationViewController" customModule="DailyPower" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kKr-70-3MS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wYv-jX-4mg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <color key="backgroundColor" red="1" green="0.82393973210000004" blue="0.40544084819999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="WMn-oF-axe">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="paletteBackgroundColor" value="background"/>
+                                </userDefinedRuntimeAttributes>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRR-OK-MGY" customClass="LoadingView" customModule="DailyPower" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59140625000000002" green="0.72857142860000002" blue="0.32215401789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wYv-jX-4mg" firstAttribute="leading" secondItem="IPU-ZT-f8S" secondAttribute="leading" id="1T9-aW-A41"/>
+                            <constraint firstItem="zRR-OK-MGY" firstAttribute="trailing" secondItem="IPU-ZT-f8S" secondAttribute="trailing" id="3p3-je-yPb"/>
+                            <constraint firstItem="wYv-jX-4mg" firstAttribute="top" secondItem="IPU-ZT-f8S" secondAttribute="top" id="GnD-H7-qHt"/>
+                            <constraint firstItem="zRR-OK-MGY" firstAttribute="bottom" secondItem="IPU-ZT-f8S" secondAttribute="bottom" id="JgS-FF-YzK"/>
+                            <constraint firstItem="zRR-OK-MGY" firstAttribute="top" secondItem="IPU-ZT-f8S" secondAttribute="top" id="Kfa-zy-1nE"/>
+                            <constraint firstItem="wYv-jX-4mg" firstAttribute="bottom" secondItem="IPU-ZT-f8S" secondAttribute="bottom" id="WCn-Xc-eYe"/>
+                            <constraint firstItem="wYv-jX-4mg" firstAttribute="trailing" secondItem="IPU-ZT-f8S" secondAttribute="trailing" id="bFk-LF-EIu"/>
+                            <constraint firstItem="zRR-OK-MGY" firstAttribute="leading" secondItem="IPU-ZT-f8S" secondAttribute="leading" id="xQe-rA-baM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IPU-ZT-f8S"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="paletteBackgroundColor" value="background"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Pa5-8z-08F">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Ooi-Vg-6Wx"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="collectionView" destination="wYv-jX-4mg" id="Ky4-Kx-Cvv"/>
+                        <outlet property="flowLayout" destination="WMn-oF-axe" id="QgX-U8-hmw"/>
+                        <outlet property="loadingView" destination="zRR-OK-MGY" id="euK-TG-qGB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJM-GT-hGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97" y="161"/>
+        </scene>
+    </scenes>
+</document>
