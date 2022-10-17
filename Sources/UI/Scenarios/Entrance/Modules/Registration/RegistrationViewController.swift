@@ -15,9 +15,8 @@ final class RegistrationViewController: UIViewController, ModuleView {
     // MARK: - Dependencies
 
     // MARK: - Outlets
-    @IBOutlet private weak var loginButton: BusyButton!
-    @IBOutlet private weak var showRegistrationButton: UIButton!
-    @IBOutlet private weak var showPasswordRecoveryButton: UIButton!
+    @IBOutlet private weak var registerButton: BusyButton!
+    @IBOutlet private weak var showSignInButton: UIButton!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
@@ -28,9 +27,8 @@ final class RegistrationViewController: UIViewController, ModuleView {
     // MARK: - ModuleView
     var output: RegistrationViewModel.Input {
         return RegistrationViewModel.Input(
-            performLogin: loginButton.rx.tap.asSignal(),
-            showRegistration: showRegistrationButton.rx.tap.asSignal(),
-            showPasswordRecovery: showPasswordRecoveryButton.rx.tap.asSignal(),
+            performLogin: registerButton.rx.tap.asSignal(),
+            showSignIn: showSignInButton.rx.tap.asSignal(),
             showUserAgreement: showUserAgreementRelay.asSignal(),
             showPrivacyPolicy: showPrivacyPolicyRelay.asSignal(),
             emailText: emailTextField.rx.text.orEmpty.asDriver(),
@@ -40,8 +38,8 @@ final class RegistrationViewController: UIViewController, ModuleView {
 
     func setupBindings(to viewModel: RegistrationViewModel) -> Disposable {
         return Disposables.create(
-            viewModel.canPerformLogin.drive(loginButton.rx.isEnabled),
-            viewModel.isBusy.drive(loginButton.rx.isBusy),
+            viewModel.canPerformLogin.drive(registerButton.rx.isEnabled),
+            viewModel.isBusy.drive(registerButton.rx.isBusy),
             viewModel.isBusy.drive(controlsContainerView.rx.isUserInteractionDisabled)
         )
     }
@@ -65,20 +63,19 @@ final class RegistrationViewController: UIViewController, ModuleView {
     private func setupTextFields() {
         emailTextField.rightView = UIImageView(image: R.image.entrance.mail())
         emailTextField.rightViewMode = .always
-        emailTextField.attributedPlaceholder = R.string.localizable.auth_screen_email_placeholder().attributed(with: .placeholder)
+        emailTextField.attributedPlaceholder = R.string.localizable.register_screen_email_placeholder().attributed(with: .placeholder)
 
         passwordTextField.rightView = UIImageView(image: R.image.entrance.lock())
         passwordTextField.rightViewMode = .always
-        passwordTextField.attributedPlaceholder = R.string.localizable.auth_screen_password_placeholder().attributed(with: .placeholder)
+        passwordTextField.attributedPlaceholder = R.string.localizable.register_screen_password_placeholder().attributed(with: .placeholder)
     }
 
     private func setupConditions() {
-        let text = R.string.localizable.auth_screen_conditions_full()
+        let text = R.string.localizable.register_screen_conditions_full()
         let attributedText = NSMutableAttributedString(attributedString: text.attributed(with: .smallText))
 
         let pairs = [
-            (URL.userAgreement, R.string.localizable.auth_screen_conditions_user_agreement()),
-            (URL.privacyPolicy, R.string.localizable.auth_screen_conditions_privacy_policy())
+            (URL.userAgreement, R.string.localizable.register_screen_conditions_user_agreement())
         ]
         pairs.forEach {
             attributedText.addAttributes([.link: $0.0], range: (text as NSString).range(of: $0.1))
@@ -89,22 +86,21 @@ final class RegistrationViewController: UIViewController, ModuleView {
     }
 
     private func setupButtons() {
-        loginButton.setTitleInstantly(R.string.localizable.auth_screen_login(), for: .normal)
-        showPasswordRecoveryButton.setTitleInstantly(R.string.localizable.auth_screen_password_recovery(), for: .normal)
+        registerButton.setTitleInstantly(R.string.localizable.register_screen_registration(), for: .normal)
 
-        let text = R.string.localizable.auth_screen_registration_full()
+        let text = R.string.localizable.register_screen_auth_full()
         let attributedText = NSMutableAttributedString(attributedString: text.attributed(with: .smallText))
 
         attributedText.addAttributes(
             TextAttributes.link.dictionary,
-            range: (text as NSString).range(of: R.string.localizable.auth_screen_registration())
+            range: (text as NSString).range(of: R.string.localizable.register_screen_auth())
         )
 
-        showRegistrationButton.setAttributedTitle(attributedText, for: .normal)
+        showSignInButton.setAttributedTitle(attributedText, for: .normal)
     }
 
     private func setupTitles() {
-        titleLabel.attributedText = R.string.localizable.auth_screen_title().attributed(with: .title)
+        titleLabel.attributedText = R.string.localizable.register_screen_title().attributed(with: .title)
     }
 
     private func setupInternalBindings() {

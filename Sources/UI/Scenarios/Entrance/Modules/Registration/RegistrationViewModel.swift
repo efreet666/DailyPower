@@ -22,8 +22,7 @@ final class RegistrationViewModel: ModuleViewModel {
     // MARK: - ModuleViewModel
     struct Input {
         let performLogin: Signal<Void>
-        let showRegistration: Signal<Void>
-        let showPasswordRecovery: Signal<Void>
+        let showSignIn: Signal<Void>
         let showUserAgreement: Signal<Void>
         let showPrivacyPolicy: Signal<Void>
         let emailText: Driver<String>
@@ -69,8 +68,7 @@ final class RegistrationViewModel: ModuleViewModel {
         Signal
             .merge(
                 finishRoute,
-                input.showRegistration.map(to: .registration),
-                input.showPasswordRecovery.map(to: .passwordRecovery),
+                input.showSignIn.map(to: .authorization),
                 input.showUserAgreement.map(to: .userAgreement),
                 input.showPrivacyPolicy.map(to: .privacyPolicy)
             )

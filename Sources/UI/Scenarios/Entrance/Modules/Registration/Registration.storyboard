@@ -108,18 +108,6 @@
                                                 <rect key="frame" x="0.0" y="372" width="375" height="14.5"/>
                                                 <color key="backgroundColor" red="0.59140625000000002" green="0.72857142860000002" blue="0.32215401789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwo-H0-ERW">
-                                                <rect key="frame" x="261" y="386.5" width="82" height="48"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="48" id="FUY-TI-nNg"/>
-                                                </constraints>
-                                                <inset key="contentEdgeInsets" minX="18" minY="0.0" maxX="18" maxY="0.0"/>
-                                                <state key="normal" title="Button"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="paletteFont" value="common"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="paletteTintColor" value="subtitle"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-SO-oWd" userLabel="Spacing">
                                                 <rect key="frame" x="0.0" y="434.5" width="375" height="83.5"/>
                                                 <color key="backgroundColor" red="0.59140625000000002" green="0.72857142860000002" blue="0.32215401789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -172,7 +160,6 @@
                                             <constraint firstItem="w9z-uw-qvy" firstAttribute="top" secondItem="G9U-ug-15b" secondAttribute="bottom" id="BY9-gc-1wP"/>
                                             <constraint firstAttribute="trailing" secondItem="KIs-Ff-pK6" secondAttribute="trailing" id="BmM-cM-Xcf"/>
                                             <constraint firstItem="3M5-Ag-MfY" firstAttribute="leading" secondItem="yq9-j1-98p" secondAttribute="leading" id="CJl-JL-1DK"/>
-                                            <constraint firstItem="kwo-H0-ERW" firstAttribute="top" secondItem="r82-Pd-v23" secondAttribute="bottom" id="Cn6-6c-ddq"/>
                                             <constraint firstItem="iNV-3J-tRr" firstAttribute="leading" secondItem="vcL-UQ-he2" secondAttribute="leading" id="IwI-16-PwG"/>
                                             <constraint firstItem="r82-Pd-v23" firstAttribute="top" secondItem="3M5-Ag-MfY" secondAttribute="bottom" id="Jnc-ej-I4H"/>
                                             <constraint firstAttribute="trailing" secondItem="0As-y0-9nI" secondAttribute="trailing" id="K73-Mh-YGe"/>
@@ -189,18 +176,17 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="paletteConstant" value="mainHorizontalInset"/>
                                                 </userDefinedRuntimeAttributes>
                                             </constraint>
-                                            <constraint firstItem="JiZ-ub-UmI" firstAttribute="trailing" secondItem="kwo-H0-ERW" secondAttribute="trailing" id="SRe-xG-8pB"/>
                                             <constraint firstItem="KIs-Ff-pK6" firstAttribute="leading" secondItem="vcL-UQ-he2" secondAttribute="leading" id="Sbh-Rb-Js0"/>
                                             <constraint firstItem="3M5-Ag-MfY" firstAttribute="trailing" secondItem="w9z-uw-qvy" secondAttribute="trailing" constant="16" id="SlE-vb-B8Q"/>
                                             <constraint firstItem="KIs-Ff-pK6" firstAttribute="top" secondItem="hxQ-IH-gbw" secondAttribute="bottom" id="Snt-dq-yoH"/>
                                             <constraint firstItem="JiZ-ub-UmI" firstAttribute="leading" secondItem="hxQ-IH-gbw" secondAttribute="leading" constant="-8" id="TOW-go-q8t"/>
                                             <constraint firstItem="r82-Pd-v23" firstAttribute="leading" secondItem="vcL-UQ-he2" secondAttribute="leading" id="UsU-zq-4cv"/>
                                             <constraint firstAttribute="bottom" secondItem="efn-Fj-Urf" secondAttribute="bottom" id="V0Z-tc-EnU"/>
+                                            <constraint firstItem="V4U-SO-oWd" firstAttribute="top" secondItem="r82-Pd-v23" secondAttribute="bottom" constant="48" id="WM2-aU-CQ7"/>
                                             <constraint firstItem="JiZ-ub-UmI" firstAttribute="leading" secondItem="yq9-j1-98p" secondAttribute="leading" id="aCZ-oy-hlp"/>
                                             <constraint firstItem="KIs-Ff-pK6" firstAttribute="height" secondItem="0As-y0-9nI" secondAttribute="height" multiplier="1:3" id="aJa-o4-SaH"/>
                                             <constraint firstItem="0As-y0-9nI" firstAttribute="leading" secondItem="vcL-UQ-he2" secondAttribute="leading" id="fFm-Zr-UUt"/>
                                             <constraint firstItem="JiZ-ub-UmI" firstAttribute="trailing" secondItem="yq9-j1-98p" secondAttribute="trailing" id="fnI-vf-xPp"/>
-                                            <constraint firstItem="V4U-SO-oWd" firstAttribute="top" secondItem="kwo-H0-ERW" secondAttribute="bottom" id="g6h-nn-7ew"/>
                                             <constraint firstItem="JiZ-ub-UmI" firstAttribute="trailing" secondItem="hxQ-IH-gbw" secondAttribute="trailing" constant="8" id="gE0-hV-hBy"/>
                                             <constraint firstItem="KIs-Ff-pK6" firstAttribute="height" secondItem="V4U-SO-oWd" secondAttribute="height" multiplier="1:5.75" id="gEF-AA-fta"/>
                                             <constraint firstAttribute="trailing" secondItem="V4U-SO-oWd" secondAttribute="trailing" id="gf5-LJ-bG1"/>
@@ -254,11 +240,10 @@
                         <outlet property="conditionsTextView" destination="hxQ-IH-gbw" id="8kq-j5-O5B"/>
                         <outlet property="controlsContainerView" destination="vcL-UQ-he2" id="9b6-p4-fbM"/>
                         <outlet property="emailTextField" destination="5v1-T1-c6r" id="MnW-we-RLj"/>
-                        <outlet property="loginButton" destination="JiZ-ub-UmI" id="GLB-K3-tey"/>
                         <outlet property="passwordTextField" destination="w9z-uw-qvy" id="AQL-7v-6JG"/>
+                        <outlet property="registerButton" destination="JiZ-ub-UmI" id="GLB-K3-tey"/>
                         <outlet property="scrollView" destination="SOl-Aa-UR1" id="KMR-HI-eat"/>
-                        <outlet property="showPasswordRecoveryButton" destination="kwo-H0-ERW" id="QeT-PD-f9c"/>
-                        <outlet property="showRegistrationButton" destination="efn-Fj-Urf" id="q8U-Hh-kR9"/>
+                        <outlet property="showSignInButton" destination="efn-Fj-Urf" id="ZhS-O1-i9L"/>
                         <outlet property="titleLabel" destination="Ya6-8N-YzB" id="a5G-3n-Tva"/>
                     </connections>
                 </viewController>
