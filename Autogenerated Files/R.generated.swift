@@ -431,7 +431,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 9 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 10 storyboards.
   struct storyboard {
     /// Storyboard `Authorization`.
     static let authorization = _R.storyboard.authorization()
@@ -447,6 +447,8 @@ struct R: Rswift.Validatable {
     static let planner = _R.storyboard.planner()
     /// Storyboard `Profile`.
     static let profile = _R.storyboard.profile()
+    /// Storyboard `Registration`.
+    static let registration = _R.storyboard.registration()
     /// Storyboard `TaskGroupDetails`.
     static let taskGroupDetails = _R.storyboard.taskGroupDetails()
     /// Storyboard `Workouts`.
@@ -485,6 +487,11 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "Profile", bundle: ...)`
     static func profile(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.profile)
+    }
+    
+    /// `UIStoryboard(name: "Registration", bundle: ...)`
+    static func registration(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.registration)
     }
     
     /// `UIStoryboard(name: "TaskGroupDetails", bundle: ...)`
@@ -1248,6 +1255,7 @@ struct _R: Rswift.Validatable {
       try nutrition.validate()
       try planner.validate()
       try profile.validate()
+      try registration.validate()
       try taskGroupDetails.validate()
       try workouts.validate()
     }
@@ -1385,6 +1393,28 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, *) {
         }
         if _R.storyboard.profile().initial() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'initial' could not be loaded from storyboard 'Profile' as 'ProfileViewController'.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct registration: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = RegistrationViewController
+      
+      let bundle = R.hostingBundle
+      let initial = StoryboardViewControllerResource<RegistrationViewController>(identifier: "Initial")
+      let name = "Registration"
+      
+      func initial(_: Void = ()) -> RegistrationViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: initial)
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "Common/background", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Common/background' is used in storyboard 'Registration', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Common/logo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Common/logo' is used in storyboard 'Registration', but couldn't be loaded.") }
+        if #available(iOS 11.0, *) {
+        }
+        if _R.storyboard.registration().initial() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'initial' could not be loaded from storyboard 'Registration' as 'RegistrationViewController'.") }
       }
       
       fileprivate init() {}

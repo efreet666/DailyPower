@@ -352,6 +352,12 @@
 		CEC9F41F2255CDDC007B2B35 /* MotivationGroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9F41D2255CDDC007B2B35 /* MotivationGroupHeaderView.swift */; };
 		CEC9F4222255CE18007B2B35 /* MotivationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9F4202255CE18007B2B35 /* MotivationCell.xib */; };
 		CEC9F4232255CE18007B2B35 /* MotivationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9F4212255CE18007B2B35 /* MotivationCell.swift */; };
+		F54BA1E128FDC9F70023C78D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1E028FDC9F70023C78D /* RegistrationViewController.swift */; };
+		F54BA1E328FDCA160023C78D /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1E228FDCA160023C78D /* RegistrationViewModel.swift */; };
+		F54BA1E528FDCCF60023C78D /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54BA1E428FDCCF60023C78D /* Registration.storyboard */; };
+		F54BA1E728FDCD180023C78D /* RegistrationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1E628FDCD180023C78D /* RegistrationAssembly.swift */; };
+		F54BA1E928FDCD280023C78D /* RegistrationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1E828FDCD280023C78D /* RegistrationDependencies.swift */; };
+		F54BA1EB28FDCD360023C78D /* RegistrationDependenciesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1EA28FDCD360023C78D /* RegistrationDependenciesExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -704,6 +710,12 @@
 		CEC9F4202255CE18007B2B35 /* MotivationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MotivationCell.xib; sourceTree = "<group>"; };
 		CEC9F4212255CE18007B2B35 /* MotivationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationCell.swift; sourceTree = "<group>"; };
 		E40496D9A42ECA64270F38A7 /* Pods-DailyPower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPower.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-DailyPower/Pods-DailyPower.debug.xcconfig"; sourceTree = "<group>"; };
+		F54BA1E028FDC9F70023C78D /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		F54BA1E228FDCA160023C78D /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		F54BA1E428FDCCF60023C78D /* Registration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		F54BA1E628FDCD180023C78D /* RegistrationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationAssembly.swift; sourceTree = "<group>"; };
+		F54BA1E828FDCD280023C78D /* RegistrationDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationDependencies.swift; sourceTree = "<group>"; };
+		F54BA1EA28FDCD360023C78D /* RegistrationDependenciesExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationDependenciesExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2421,6 +2433,12 @@
 		F54BA1DF28FD5C990023C78D /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				F54BA1E028FDC9F70023C78D /* RegistrationViewController.swift */,
+				F54BA1E228FDCA160023C78D /* RegistrationViewModel.swift */,
+				F54BA1E428FDCCF60023C78D /* Registration.storyboard */,
+				F54BA1E628FDCD180023C78D /* RegistrationAssembly.swift */,
+				F54BA1E828FDCD280023C78D /* RegistrationDependencies.swift */,
+				F54BA1EA28FDCD360023C78D /* RegistrationDependenciesExtensions.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -2507,6 +2525,7 @@
 				CE12C070224E341200A27BD1 /* UserAgreement.rtf in Resources */,
 				C1C5BD2B22084F8800EDE621 /* Profile.storyboard in Resources */,
 				86368908224A23DC00BAA493 /* PlannerItemCell.xib in Resources */,
+				F54BA1E528FDCCF60023C78D /* Registration.storyboard in Resources */,
 				CEC9F4222255CE18007B2B35 /* MotivationCell.xib in Resources */,
 				C195CF6122411CAF00E8EA6A /* Nutrition.storyboard in Resources */,
 				C1B22C34224ED33400C3555F /* LoadingView.xib in Resources */,
@@ -2764,6 +2783,7 @@
 				C19E3347220C3A9700B4935A /* AppSettingsDependenciesExtensions.swift in Sources */,
 				C1B22C452251555F00C3555F /* ImageDownsampler.swift in Sources */,
 				C111F02D225F4ECA0037ECF0 /* PlayerPlaybackState.swift in Sources */,
+				F54BA1E728FDCD180023C78D /* RegistrationAssembly.swift in Sources */,
 				C111F030225F4ECA0037ECF0 /* AVPlayerEngineDependenciesExtensions.swift in Sources */,
 				C195CF6422411CAF00E8EA6A /* NutritionViewModel.swift in Sources */,
 				C17DC067221EDC08009BA91E /* UIError.swift in Sources */,
@@ -2789,12 +2809,14 @@
 				C1A1F3A2222D26E5009832CE /* ContainerProvider.swift in Sources */,
 				C1257E98221C4FEE00CA80B9 /* AppDelegateAssembly.swift in Sources */,
 				C195CF5E22411CAF00E8EA6A /* NutritionCoordinator.swift in Sources */,
+				F54BA1E928FDCD280023C78D /* RegistrationDependencies.swift in Sources */,
 				C1C5BD2122084F7200EDE621 /* PlannerDependenciesExtensions.swift in Sources */,
 				C111F04A225F5D0E0037ECF0 /* PlayerDependenciesExtensions.swift in Sources */,
 				CE12C067224CCBCD00A27BD1 /* RTFDocumentConverter.swift in Sources */,
 				C1C5BCA82208401D00EDE621 /* MainCoordinator.swift in Sources */,
 				CEC9F4192255CDA4007B2B35 /* MotivationsServiceAssembly.swift in Sources */,
 				C19E3368220C7CBD00B4935A /* NetworkHTTPHeadersDependenciesExtensions.swift in Sources */,
+				F54BA1EB28FDCD360023C78D /* RegistrationDependenciesExtensions.swift in Sources */,
 				C1C5BC16220443E100EDE621 /* ViewControllerAssembly.swift in Sources */,
 				CEC9F4142255CDA4007B2B35 /* MotivationGroupsNetworkResponse.swift in Sources */,
 				C111F004225F41DF0037ECF0 /* NetworkReachability.swift in Sources */,
@@ -2906,6 +2928,7 @@
 				8633AF61224D732900134137 /* CreateTaskNetworkRequest.swift in Sources */,
 				C17DC0D5222000A6009BA91E /* ObservableType+Errors.swift in Sources */,
 				C1B22C2A224E332A00C3555F /* UserProfileService.swift in Sources */,
+				F54BA1E128FDC9F70023C78D /* RegistrationViewController.swift in Sources */,
 				C111F005225F41DF0037ECF0 /* NetworkReachabilityAssembly.swift in Sources */,
 				C195CF9122411CF800E8EA6A /* MotivationAssembly.swift in Sources */,
 				C1A1F3AA222D2A32009832CE /* EmbedTransition.swift in Sources */,
@@ -2918,6 +2941,7 @@
 				C1B22C2B224E332A00C3555F /* UserProfileServiceDependenciesExtensions.swift in Sources */,
 				C195CF5F22411CAF00E8EA6A /* NutritionCoordinatorDependencies.swift in Sources */,
 				C19E3393220DA74900B4935A /* NetworkTaskFactory.swift in Sources */,
+				F54BA1E328FDCA160023C78D /* RegistrationViewModel.swift in Sources */,
 				C195CF6022411CAF00E8EA6A /* NutritionCoordinatorAssembly.swift in Sources */,
 				C195CF7922411CDD00E8EA6A /* WorkoutsDependenciesExtensions.swift in Sources */,
 				8633AF5A224D71DA00134137 /* TasksServiceAssembly.swift in Sources */,
