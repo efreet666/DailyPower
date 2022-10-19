@@ -431,7 +431,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 9 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 11 storyboards.
   struct storyboard {
     /// Storyboard `Authorization`.
     static let authorization = _R.storyboard.authorization()
@@ -443,10 +443,14 @@ struct R: Rswift.Validatable {
     static let motivation = _R.storyboard.motivation()
     /// Storyboard `Nutrition`.
     static let nutrition = _R.storyboard.nutrition()
+    /// Storyboard `PasswordRecovery`.
+    static let passwordRecovery = _R.storyboard.passwordRecovery()
     /// Storyboard `Planner`.
     static let planner = _R.storyboard.planner()
     /// Storyboard `Profile`.
     static let profile = _R.storyboard.profile()
+    /// Storyboard `Registration`.
+    static let registration = _R.storyboard.registration()
     /// Storyboard `TaskGroupDetails`.
     static let taskGroupDetails = _R.storyboard.taskGroupDetails()
     /// Storyboard `Workouts`.
@@ -477,6 +481,11 @@ struct R: Rswift.Validatable {
       return UIKit.UIStoryboard(resource: R.storyboard.nutrition)
     }
     
+    /// `UIStoryboard(name: "PasswordRecovery", bundle: ...)`
+    static func passwordRecovery(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.passwordRecovery)
+    }
+    
     /// `UIStoryboard(name: "Planner", bundle: ...)`
     static func planner(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.planner)
@@ -485,6 +494,11 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "Profile", bundle: ...)`
     static func profile(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.profile)
+    }
+    
+    /// `UIStoryboard(name: "Registration", bundle: ...)`
+    static func registration(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.registration)
     }
     
     /// `UIStoryboard(name: "TaskGroupDetails", bundle: ...)`
@@ -502,18 +516,28 @@ struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 82 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 95 localization keys.
     struct localizable {
       /// Value: E-Mail
       static let auth_screen_email_placeholder = Rswift.StringResource(key: "auth_screen_email_placeholder", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: E-Mail
+      static let password_recovery_email_placeholder = Rswift.StringResource(key: "password_recovery_email_placeholder", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: E-Mail
+      static let register_screen_email_placeholder = Rswift.StringResource(key: "register_screen_email_placeholder", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Next
       static let main_tabbar_workouts = Rswift.StringResource(key: "main_tabbar_workouts", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: OK
       static let alert_button_ok = Rswift.StringResource(key: "alert_button_ok", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: ВХОД В АККАУНТ
       static let auth_screen_title = Rswift.StringResource(key: "auth_screen_title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Введите привязанный к аккаунту E-mail и получи по почте новый пароль для входа
+      static let password_recovery_subtitle = Rswift.StringResource(key: "password_recovery_subtitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Войти
       static let auth_screen_login = Rswift.StringResource(key: "auth_screen_login", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Войти
+      static let register_screen_auth = Rswift.StringResource(key: "register_screen_auth", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Вспомнили пароль? Войти
+      static let password_recovery_auth_full = Rswift.StringResource(key: "password_recovery_auth_full", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Вы действительно хотите удалить задачу?
       static let taskgroup_screen_delete_task_message = Rswift.StringResource(key: "taskgroup_screen_delete_task_message", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Вы действительно хотите удалить цель?
@@ -524,10 +548,16 @@ struct R: Rswift.Validatable {
       static let error_message_invalid_parameters = Rswift.StringResource(key: "error_message_invalid_parameters", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Выполнен запрос с некорректным токеном.
       static let error_message_invalid_token = Rswift.StringResource(key: "error_message_invalid_token", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Выслать новый пароль
+      static let password_recovery_auth = Rswift.StringResource(key: "password_recovery_auth", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Да
       static let alert_button_yes = Rswift.StringResource(key: "alert_button_yes", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Есть аккаунт? Войти
+      static let register_screen_auth_full = Rswift.StringResource(key: "register_screen_auth_full", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Забыли пароль?
       static let auth_screen_password_recovery = Rswift.StringResource(key: "auth_screen_password_recovery", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Забыли пароль?
+      static let password_recovery_title = Rswift.StringResource(key: "password_recovery_title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Загрузка задач
       static let taskgroup_screen_loading = Rswift.StringResource(key: "taskgroup_screen_loading", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Загрузка контента
@@ -538,12 +568,16 @@ struct R: Rswift.Validatable {
       static let planner_screen_loading = Rswift.StringResource(key: "planner_screen_loading", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Зарегистрироваться
       static let auth_screen_registration = Rswift.StringResource(key: "auth_screen_registration", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Зарегистрироваться
+      static let register_screen_registration = Rswift.StringResource(key: "register_screen_registration", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Изменить
       static let planner_screen_edit = Rswift.StringResource(key: "planner_screen_edit", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Изменить
       static let taskgroup_screen_edit = Rswift.StringResource(key: "taskgroup_screen_edit", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Нажимая «Войти», Вы соглашаетесь с пользовательским соглашением и политикой конфиденциальности.
       static let auth_screen_conditions_full = Rswift.StringResource(key: "auth_screen_conditions_full", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Нажимая кнопку регистрации вы принимаете условия Пользовательского соглашения
+      static let register_screen_conditions_full = Rswift.StringResource(key: "register_screen_conditions_full", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Не удалось выполнить запрос, отсутствует токен.
       static let error_message_request_failed_no_token = Rswift.StringResource(key: "error_message_request_failed_no_token", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Не удалось выполнить запрос.
@@ -576,6 +610,8 @@ struct R: Rswift.Validatable {
       static let alert_title_error = Rswift.StringResource(key: "alert_title_error", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Пароль
       static let auth_screen_password_placeholder = Rswift.StringResource(key: "auth_screen_password_placeholder", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Пароль
+      static let register_screen_password_placeholder = Rswift.StringResource(key: "register_screen_password_placeholder", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Питание
       static let main_tabbar_nutrition = Rswift.StringResource(key: "main_tabbar_nutrition", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Питание
@@ -604,6 +640,8 @@ struct R: Rswift.Validatable {
       static let document_title_privacy_policy = Rswift.StringResource(key: "document_title_privacy_policy", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Получен некорректный ответ сервера.
       static let error_message_response_mapping_error = Rswift.StringResource(key: "error_message_response_mapping_error", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Пользовательского соглашения
+      static let register_screen_conditions_user_agreement = Rswift.StringResource(key: "register_screen_conditions_user_agreement", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Пользовательское соглашение
       static let document_title_user_agreement = Rswift.StringResource(key: "document_title_user_agreement", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Превышено максимальное количество задач.
@@ -632,6 +670,8 @@ struct R: Rswift.Validatable {
       static let main_tabbar_profile = Rswift.StringResource(key: "main_tabbar_profile", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Профиль
       static let profile_screen_title = Rswift.StringResource(key: "profile_screen_title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: РЕГИСТРАЦИЯ
+      static let register_screen_title = Rswift.StringResource(key: "register_screen_title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Разум
       static let main_tabbar_motivation = Rswift.StringResource(key: "main_tabbar_motivation", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Разум
@@ -674,6 +714,16 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("auth_screen_email_placeholder", bundle: R.hostingBundle, comment: "")
       }
       
+      /// Value: E-Mail
+      static func password_recovery_email_placeholder(_: Void = ()) -> String {
+        return NSLocalizedString("password_recovery_email_placeholder", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: E-Mail
+      static func register_screen_email_placeholder(_: Void = ()) -> String {
+        return NSLocalizedString("register_screen_email_placeholder", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// Value: Next
       static func main_tabbar_workouts(_: Void = ()) -> String {
         return NSLocalizedString("main_tabbar_workouts", bundle: R.hostingBundle, comment: "")
@@ -689,9 +739,24 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("auth_screen_title", bundle: R.hostingBundle, comment: "")
       }
       
+      /// Value: Введите привязанный к аккаунту E-mail и получи по почте новый пароль для входа
+      static func password_recovery_subtitle(_: Void = ()) -> String {
+        return NSLocalizedString("password_recovery_subtitle", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// Value: Войти
       static func auth_screen_login(_: Void = ()) -> String {
         return NSLocalizedString("auth_screen_login", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: Войти
+      static func register_screen_auth(_: Void = ()) -> String {
+        return NSLocalizedString("register_screen_auth", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: Вспомнили пароль? Войти
+      static func password_recovery_auth_full(_: Void = ()) -> String {
+        return NSLocalizedString("password_recovery_auth_full", bundle: R.hostingBundle, comment: "")
       }
       
       /// Value: Вы действительно хотите удалить задачу?
@@ -719,14 +784,29 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("error_message_invalid_token", bundle: R.hostingBundle, comment: "")
       }
       
+      /// Value: Выслать новый пароль
+      static func password_recovery_auth(_: Void = ()) -> String {
+        return NSLocalizedString("password_recovery_auth", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// Value: Да
       static func alert_button_yes(_: Void = ()) -> String {
         return NSLocalizedString("alert_button_yes", bundle: R.hostingBundle, comment: "")
       }
       
+      /// Value: Есть аккаунт? Войти
+      static func register_screen_auth_full(_: Void = ()) -> String {
+        return NSLocalizedString("register_screen_auth_full", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// Value: Забыли пароль?
       static func auth_screen_password_recovery(_: Void = ()) -> String {
         return NSLocalizedString("auth_screen_password_recovery", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: Забыли пароль?
+      static func password_recovery_title(_: Void = ()) -> String {
+        return NSLocalizedString("password_recovery_title", bundle: R.hostingBundle, comment: "")
       }
       
       /// Value: Загрузка задач
@@ -754,6 +834,11 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("auth_screen_registration", bundle: R.hostingBundle, comment: "")
       }
       
+      /// Value: Зарегистрироваться
+      static func register_screen_registration(_: Void = ()) -> String {
+        return NSLocalizedString("register_screen_registration", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// Value: Изменить
       static func planner_screen_edit(_: Void = ()) -> String {
         return NSLocalizedString("planner_screen_edit", bundle: R.hostingBundle, comment: "")
@@ -767,6 +852,11 @@ struct R: Rswift.Validatable {
       /// Value: Нажимая «Войти», Вы соглашаетесь с пользовательским соглашением и политикой конфиденциальности.
       static func auth_screen_conditions_full(_: Void = ()) -> String {
         return NSLocalizedString("auth_screen_conditions_full", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: Нажимая кнопку регистрации вы принимаете условия Пользовательского соглашения
+      static func register_screen_conditions_full(_: Void = ()) -> String {
+        return NSLocalizedString("register_screen_conditions_full", bundle: R.hostingBundle, comment: "")
       }
       
       /// Value: Не удалось выполнить запрос, отсутствует токен.
@@ -849,6 +939,11 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("auth_screen_password_placeholder", bundle: R.hostingBundle, comment: "")
       }
       
+      /// Value: Пароль
+      static func register_screen_password_placeholder(_: Void = ()) -> String {
+        return NSLocalizedString("register_screen_password_placeholder", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// Value: Питание
       static func main_tabbar_nutrition(_: Void = ()) -> String {
         return NSLocalizedString("main_tabbar_nutrition", bundle: R.hostingBundle, comment: "")
@@ -919,6 +1014,11 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("error_message_response_mapping_error", bundle: R.hostingBundle, comment: "")
       }
       
+      /// Value: Пользовательского соглашения
+      static func register_screen_conditions_user_agreement(_: Void = ()) -> String {
+        return NSLocalizedString("register_screen_conditions_user_agreement", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// Value: Пользовательское соглашение
       static func document_title_user_agreement(_: Void = ()) -> String {
         return NSLocalizedString("document_title_user_agreement", bundle: R.hostingBundle, comment: "")
@@ -987,6 +1087,11 @@ struct R: Rswift.Validatable {
       /// Value: Профиль
       static func profile_screen_title(_: Void = ()) -> String {
         return NSLocalizedString("profile_screen_title", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: РЕГИСТРАЦИЯ
+      static func register_screen_title(_: Void = ()) -> String {
+        return NSLocalizedString("register_screen_title", bundle: R.hostingBundle, comment: "")
       }
       
       /// Value: Разум
@@ -1246,8 +1351,10 @@ struct _R: Rswift.Validatable {
       try launchScreen.validate()
       try motivation.validate()
       try nutrition.validate()
+      try passwordRecovery.validate()
       try planner.validate()
       try profile.validate()
+      try registration.validate()
       try taskGroupDetails.validate()
       try workouts.validate()
     }
@@ -1348,6 +1455,28 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
     
+    struct passwordRecovery: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = PasswordRecoveryViewController
+      
+      let bundle = R.hostingBundle
+      let initial = StoryboardViewControllerResource<PasswordRecoveryViewController>(identifier: "Initial")
+      let name = "PasswordRecovery"
+      
+      func initial(_: Void = ()) -> PasswordRecoveryViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: initial)
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "Common/background", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Common/background' is used in storyboard 'PasswordRecovery', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Common/logo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Common/logo' is used in storyboard 'PasswordRecovery', but couldn't be loaded.") }
+        if #available(iOS 11.0, *) {
+        }
+        if _R.storyboard.passwordRecovery().initial() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'initial' could not be loaded from storyboard 'PasswordRecovery' as 'PasswordRecoveryViewController'.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
     struct planner: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
       typealias InitialController = PlannerViewController
       
@@ -1385,6 +1514,28 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, *) {
         }
         if _R.storyboard.profile().initial() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'initial' could not be loaded from storyboard 'Profile' as 'ProfileViewController'.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct registration: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = RegistrationViewController
+      
+      let bundle = R.hostingBundle
+      let initial = StoryboardViewControllerResource<RegistrationViewController>(identifier: "Initial")
+      let name = "Registration"
+      
+      func initial(_: Void = ()) -> RegistrationViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: initial)
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "Common/background", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Common/background' is used in storyboard 'Registration', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Common/logo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Common/logo' is used in storyboard 'Registration', but couldn't be loaded.") }
+        if #available(iOS 11.0, *) {
+        }
+        if _R.storyboard.registration().initial() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'initial' could not be loaded from storyboard 'Registration' as 'RegistrationViewController'.") }
       }
       
       fileprivate init() {}

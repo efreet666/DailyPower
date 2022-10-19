@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -89,7 +89,6 @@
 		C1257E9A221C4FEE00CA80B9 /* AppDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1257E96221C4FEE00CA80B9 /* AppDelegateProxy.swift */; };
 		C1257EA0221C52CC00CA80B9 /* UserInterfaceAppDelegateAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1257E9C221C52CC00CA80B9 /* UserInterfaceAppDelegateAssembly.swift */; };
 		C1257EA2221C52CC00CA80B9 /* UserInterfaceAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1257E9E221C52CC00CA80B9 /* UserInterfaceAppDelegate.swift */; };
-		C1257EDA221D688400CA80B9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1257ED9221D688400CA80B9 /* R.generated.swift */; };
 		C1615A9D224AE3BD003ADFCE /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1615A9C224AE3BC003ADFCE /* RemoteImageView.swift */; };
 		C1622BE723017CC700E40E4B /* PlayerWindowRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1622BE523017CC700E40E4B /* PlayerWindowRootViewController.swift */; };
 		C1622BE823017CC700E40E4B /* PlayerWindowRootViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1622BE623017CC700E40E4B /* PlayerWindowRootViewControllerAssembly.swift */; };
@@ -352,6 +351,19 @@
 		CEC9F41F2255CDDC007B2B35 /* MotivationGroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9F41D2255CDDC007B2B35 /* MotivationGroupHeaderView.swift */; };
 		CEC9F4222255CE18007B2B35 /* MotivationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9F4202255CE18007B2B35 /* MotivationCell.xib */; };
 		CEC9F4232255CE18007B2B35 /* MotivationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9F4212255CE18007B2B35 /* MotivationCell.swift */; };
+		F54BA1E128FDC9F70023C78D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1E028FDC9F70023C78D /* RegistrationViewController.swift */; };
+		F54BA1E328FDCA160023C78D /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1E228FDCA160023C78D /* RegistrationViewModel.swift */; };
+		F54BA1E528FDCCF60023C78D /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54BA1E428FDCCF60023C78D /* Registration.storyboard */; };
+		F54BA1E728FDCD180023C78D /* RegistrationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1E628FDCD180023C78D /* RegistrationAssembly.swift */; };
+		F54BA1E928FDCD280023C78D /* RegistrationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1E828FDCD280023C78D /* RegistrationDependencies.swift */; };
+		F54BA1EB28FDCD360023C78D /* RegistrationDependenciesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1EA28FDCD360023C78D /* RegistrationDependenciesExtensions.swift */; };
+		F54BA1F628FEA5130023C78D /* PasswordRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1F528FEA5130023C78D /* PasswordRecoveryViewController.swift */; };
+		F54BA1F828FEA52C0023C78D /* PasswordRecoveryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1F728FEA52C0023C78D /* PasswordRecoveryViewModel.swift */; };
+		F54BA1FA28FEA53C0023C78D /* PasswordRecovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54BA1F928FEA53C0023C78D /* PasswordRecovery.storyboard */; };
+		F54BA1FC28FEA5490023C78D /* PasswordRecoveryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1FB28FEA5490023C78D /* PasswordRecoveryAssembly.swift */; };
+		F54BA1FE28FEA55A0023C78D /* PasswordRecoveryDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1FD28FEA55A0023C78D /* PasswordRecoveryDependencies.swift */; };
+		F54BA20028FEA5680023C78D /* PasswordRecoveryDependenciesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA1FF28FEA5680023C78D /* PasswordRecoveryDependenciesExtensions.swift */; };
+		F54BA202290032020023C78D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BA201290032020023C78D /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -437,7 +449,6 @@
 		C1257E96221C4FEE00CA80B9 /* AppDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateProxy.swift; sourceTree = "<group>"; };
 		C1257E9C221C52CC00CA80B9 /* UserInterfaceAppDelegateAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceAppDelegateAssembly.swift; sourceTree = "<group>"; };
 		C1257E9E221C52CC00CA80B9 /* UserInterfaceAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceAppDelegate.swift; sourceTree = "<group>"; };
-		C1257ED9221D688400CA80B9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		C144D9A0A81E2F1FB424F2E9 /* Pods_DailyPower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyPower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1615A9C224AE3BC003ADFCE /* RemoteImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		C1622BE523017CC700E40E4B /* PlayerWindowRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerWindowRootViewController.swift; sourceTree = "<group>"; };
@@ -704,6 +715,19 @@
 		CEC9F4202255CE18007B2B35 /* MotivationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MotivationCell.xib; sourceTree = "<group>"; };
 		CEC9F4212255CE18007B2B35 /* MotivationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotivationCell.swift; sourceTree = "<group>"; };
 		E40496D9A42ECA64270F38A7 /* Pods-DailyPower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPower.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-DailyPower/Pods-DailyPower.debug.xcconfig"; sourceTree = "<group>"; };
+		F54BA1E028FDC9F70023C78D /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		F54BA1E228FDCA160023C78D /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		F54BA1E428FDCCF60023C78D /* Registration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		F54BA1E628FDCD180023C78D /* RegistrationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationAssembly.swift; sourceTree = "<group>"; };
+		F54BA1E828FDCD280023C78D /* RegistrationDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationDependencies.swift; sourceTree = "<group>"; };
+		F54BA1EA28FDCD360023C78D /* RegistrationDependenciesExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationDependenciesExtensions.swift; sourceTree = "<group>"; };
+		F54BA1F528FEA5130023C78D /* PasswordRecoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewController.swift; sourceTree = "<group>"; };
+		F54BA1F728FEA52C0023C78D /* PasswordRecoveryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewModel.swift; sourceTree = "<group>"; };
+		F54BA1F928FEA53C0023C78D /* PasswordRecovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PasswordRecovery.storyboard; sourceTree = "<group>"; };
+		F54BA1FB28FEA5490023C78D /* PasswordRecoveryAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryAssembly.swift; sourceTree = "<group>"; };
+		F54BA1FD28FEA55A0023C78D /* PasswordRecoveryDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryDependencies.swift; sourceTree = "<group>"; };
+		F54BA1FF28FEA5680023C78D /* PasswordRecoveryDependenciesExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryDependenciesExtensions.swift; sourceTree = "<group>"; };
+		F54BA201290032020023C78D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1038,7 +1062,7 @@
 		C1257ED8221D688400CA80B9 /* Autogenerated Files */ = {
 			isa = PBXGroup;
 			children = (
-				C1257ED9221D688400CA80B9 /* R.generated.swift */,
+				F54BA201290032020023C78D /* R.generated.swift */,
 			);
 			path = "Autogenerated Files";
 			sourceTree = "<group>";
@@ -1981,6 +2005,7 @@
 		C1C5BC612207BD0100EDE621 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F54BA1F428FEA4A10023C78D /* PasswordRecovery */,
 				C1C5BC692207BD0200EDE621 /* Authorization */,
 				F54BA1DF28FD5C990023C78D /* Registration */,
 			);
@@ -2421,8 +2446,27 @@
 		F54BA1DF28FD5C990023C78D /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				F54BA1E028FDC9F70023C78D /* RegistrationViewController.swift */,
+				F54BA1E228FDCA160023C78D /* RegistrationViewModel.swift */,
+				F54BA1E428FDCCF60023C78D /* Registration.storyboard */,
+				F54BA1E628FDCD180023C78D /* RegistrationAssembly.swift */,
+				F54BA1E828FDCD280023C78D /* RegistrationDependencies.swift */,
+				F54BA1EA28FDCD360023C78D /* RegistrationDependenciesExtensions.swift */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		F54BA1F428FEA4A10023C78D /* PasswordRecovery */ = {
+			isa = PBXGroup;
+			children = (
+				F54BA1F528FEA5130023C78D /* PasswordRecoveryViewController.swift */,
+				F54BA1F728FEA52C0023C78D /* PasswordRecoveryViewModel.swift */,
+				F54BA1F928FEA53C0023C78D /* PasswordRecovery.storyboard */,
+				F54BA1FB28FEA5490023C78D /* PasswordRecoveryAssembly.swift */,
+				F54BA1FD28FEA55A0023C78D /* PasswordRecoveryDependencies.swift */,
+				F54BA1FF28FEA5680023C78D /* PasswordRecoveryDependenciesExtensions.swift */,
+			);
+			path = PasswordRecovery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2457,7 +2501,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = mobile.Simbirsoft;
 				TargetAttributes = {
 					C1C5BBDB2202D1D600EDE621 = {
@@ -2496,6 +2540,7 @@
 			files = (
 				CE12C047224CA7AC00A27BD1 /* PrivacyPolicy.rtf in Resources */,
 				CE12C05E224CB6FA00A27BD1 /* DocumentViewer.storyboard in Resources */,
+				F54BA1FA28FEA53C0023C78D /* PasswordRecovery.storyboard in Resources */,
 				C111F091226767B10037ECF0 /* VideoViewStyle2.xib in Resources */,
 				CEC9F41E2255CDDC007B2B35 /* MotivationGroupHeaderView.xib in Resources */,
 				C1C5BD1F22084F7200EDE621 /* Planner.storyboard in Resources */,
@@ -2507,6 +2552,7 @@
 				CE12C070224E341200A27BD1 /* UserAgreement.rtf in Resources */,
 				C1C5BD2B22084F8800EDE621 /* Profile.storyboard in Resources */,
 				86368908224A23DC00BAA493 /* PlannerItemCell.xib in Resources */,
+				F54BA1E528FDCCF60023C78D /* Registration.storyboard in Resources */,
 				CEC9F4222255CE18007B2B35 /* MotivationCell.xib in Resources */,
 				C195CF6122411CAF00E8EA6A /* Nutrition.storyboard in Resources */,
 				C1B22C34224ED33400C3555F /* LoadingView.xib in Resources */,
@@ -2540,7 +2586,7 @@
 		};
 		9A370CE8298E83148C2D2E02 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -2562,7 +2608,8 @@
 		};
 		C1C5BC032202F00C00EDE621 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -2579,7 +2626,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Autogenerated Files/R.generated.swift\"\n";
-			showEnvVarsInLog = 0;
 		};
 		C1C5BC042202F12500EDE621 /* Build Info */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2671,13 +2717,13 @@
 				C1CDD7D42243B338001F642B /* UITextField+Palette.swift in Sources */,
 				C1C5BC4E2207AA3C00EDE621 /* AppCoordinator.swift in Sources */,
 				C10CA7B42251C7B700DD5BDD /* PhotoSourcePickerAssembly.swift in Sources */,
+				F54BA202290032020023C78D /* R.generated.swift in Sources */,
 				C19E338C220D931B00B4935A /* NetworkTask.swift in Sources */,
 				C17DC063221ED571009BA91E /* SharedObservableHolder.swift in Sources */,
 				C1CDD7F42243F2F2001F642B /* UIScrollView+Rx.swift in Sources */,
 				C19E3380220D8ABC00B4935A /* NetworkClientDependenciesExtensions.swift in Sources */,
 				864316E32254085D0094F8EA /* ExpandableLabelView.swift in Sources */,
 				C19E3339220C3A9700B4935A /* UserDefaultsStorage.swift in Sources */,
-				C1257EDA221D688400CA80B9 /* R.generated.swift in Sources */,
 				CEC9F41F2255CDDC007B2B35 /* MotivationGroupHeaderView.swift in Sources */,
 				C17DC0C6221FEF06009BA91E /* ErrorHandlerProvider.swift in Sources */,
 				C1CDD83C2248EE90001F642B /* LengthValidatorAssembly.swift in Sources */,
@@ -2687,6 +2733,7 @@
 				C195CF8E22411CF800E8EA6A /* MotivationCoordinatorAssembly.swift in Sources */,
 				C1622BE723017CC700E40E4B /* PlayerWindowRootViewController.swift in Sources */,
 				C1B22BF6224D1E4F00C3555F /* UserProfileNetworkResponse.swift in Sources */,
+				F54BA1FE28FEA55A0023C78D /* PasswordRecoveryDependencies.swift in Sources */,
 				C167A58B2236695900FE1803 /* Coordinator+Mapper.swift in Sources */,
 				C1B22C7C2251914700C3555F /* PhotoPickerAssembly.swift in Sources */,
 				C19E333C220C3A9700B4935A /* KeychainStorageDependencies.swift in Sources */,
@@ -2730,11 +2777,14 @@
 				C1CDD8332248EC14001F642B /* AnyDataValidator.swift in Sources */,
 				C1257EA2221C52CC00CA80B9 /* UserInterfaceAppDelegate.swift in Sources */,
 				C18F581622E70BA90099AC1F /* SettingsCleanerAssembly.swift in Sources */,
+				F54BA20028FEA5680023C78D /* PasswordRecoveryDependenciesExtensions.swift in Sources */,
 				C195CF7E22411CDD00E8EA6A /* WorkoutsAssembly.swift in Sources */,
 				C195CF6222411CAF00E8EA6A /* NutritionViewController.swift in Sources */,
 				C1C5BC17220443E100EDE621 /* ModuleView.swift in Sources */,
 				C195CF8D22411CF800E8EA6A /* MotivationCoordinator.swift in Sources */,
 				C1C5BC14220443E100EDE621 /* ModuleViewModel.swift in Sources */,
+				F54BA1F828FEA52C0023C78D /* PasswordRecoveryViewModel.swift in Sources */,
+				F54BA1FC28FEA5490023C78D /* PasswordRecoveryAssembly.swift in Sources */,
 				C111F094226767B10037ECF0 /* VideoViewStyle2.swift in Sources */,
 				C1F82AD222141A67003F5D0B /* UIColor+Extensions.swift in Sources */,
 				C18F581922E70BA90099AC1F /* SettingsCleanerDependenciesExtensions.swift in Sources */,
@@ -2764,6 +2814,7 @@
 				C19E3347220C3A9700B4935A /* AppSettingsDependenciesExtensions.swift in Sources */,
 				C1B22C452251555F00C3555F /* ImageDownsampler.swift in Sources */,
 				C111F02D225F4ECA0037ECF0 /* PlayerPlaybackState.swift in Sources */,
+				F54BA1E728FDCD180023C78D /* RegistrationAssembly.swift in Sources */,
 				C111F030225F4ECA0037ECF0 /* AVPlayerEngineDependenciesExtensions.swift in Sources */,
 				C195CF6422411CAF00E8EA6A /* NutritionViewModel.swift in Sources */,
 				C17DC067221EDC08009BA91E /* UIError.swift in Sources */,
@@ -2789,12 +2840,14 @@
 				C1A1F3A2222D26E5009832CE /* ContainerProvider.swift in Sources */,
 				C1257E98221C4FEE00CA80B9 /* AppDelegateAssembly.swift in Sources */,
 				C195CF5E22411CAF00E8EA6A /* NutritionCoordinator.swift in Sources */,
+				F54BA1E928FDCD280023C78D /* RegistrationDependencies.swift in Sources */,
 				C1C5BD2122084F7200EDE621 /* PlannerDependenciesExtensions.swift in Sources */,
 				C111F04A225F5D0E0037ECF0 /* PlayerDependenciesExtensions.swift in Sources */,
 				CE12C067224CCBCD00A27BD1 /* RTFDocumentConverter.swift in Sources */,
 				C1C5BCA82208401D00EDE621 /* MainCoordinator.swift in Sources */,
 				CEC9F4192255CDA4007B2B35 /* MotivationsServiceAssembly.swift in Sources */,
 				C19E3368220C7CBD00B4935A /* NetworkHTTPHeadersDependenciesExtensions.swift in Sources */,
+				F54BA1EB28FDCD360023C78D /* RegistrationDependenciesExtensions.swift in Sources */,
 				C1C5BC16220443E100EDE621 /* ViewControllerAssembly.swift in Sources */,
 				CEC9F4142255CDA4007B2B35 /* MotivationGroupsNetworkResponse.swift in Sources */,
 				C111F004225F41DF0037ECF0 /* NetworkReachability.swift in Sources */,
@@ -2882,6 +2935,7 @@
 				C1E02CBB2254C29F0010AE55 /* DocumentViewerPresentable.swift in Sources */,
 				C1B22C2F224ECBD000C3555F /* UITextView+Palette.swift in Sources */,
 				C1C278A3223715FF0039B643 /* MainTabNavigationControllerConfigurator.swift in Sources */,
+				F54BA1F628FEA5130023C78D /* PasswordRecoveryViewController.swift in Sources */,
 				C19E3355220C640700B4935A /* DecodableNetworkResponse.swift in Sources */,
 				C195CF9322411CF800E8EA6A /* MotivationViewModel.swift in Sources */,
 				C111F033225F4ECA0037ECF0 /* AVPlayerItemPreloader.swift in Sources */,
@@ -2906,6 +2960,7 @@
 				8633AF61224D732900134137 /* CreateTaskNetworkRequest.swift in Sources */,
 				C17DC0D5222000A6009BA91E /* ObservableType+Errors.swift in Sources */,
 				C1B22C2A224E332A00C3555F /* UserProfileService.swift in Sources */,
+				F54BA1E128FDC9F70023C78D /* RegistrationViewController.swift in Sources */,
 				C111F005225F41DF0037ECF0 /* NetworkReachabilityAssembly.swift in Sources */,
 				C195CF9122411CF800E8EA6A /* MotivationAssembly.swift in Sources */,
 				C1A1F3AA222D2A32009832CE /* EmbedTransition.swift in Sources */,
@@ -2918,6 +2973,7 @@
 				C1B22C2B224E332A00C3555F /* UserProfileServiceDependenciesExtensions.swift in Sources */,
 				C195CF5F22411CAF00E8EA6A /* NutritionCoordinatorDependencies.swift in Sources */,
 				C19E3393220DA74900B4935A /* NetworkTaskFactory.swift in Sources */,
+				F54BA1E328FDCA160023C78D /* RegistrationViewModel.swift in Sources */,
 				C195CF6022411CAF00E8EA6A /* NutritionCoordinatorAssembly.swift in Sources */,
 				C195CF7922411CDD00E8EA6A /* WorkoutsDependenciesExtensions.swift in Sources */,
 				8633AF5A224D71DA00134137 /* TasksServiceAssembly.swift in Sources */,
@@ -2979,6 +3035,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -3004,7 +3061,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -3040,6 +3097,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -3059,7 +3117,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

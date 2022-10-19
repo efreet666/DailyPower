@@ -29,6 +29,22 @@
 "auth_screen_registration_full" = "Нет аккаунта? Зарегистрироваться.";
 "auth_screen_registration" = "Зарегистрироваться";
 
+// Экран регистрации
+"register_screen_title" = "РЕГИСТРАЦИЯ";
+"register_screen_email_placeholder" = "E-Mail";
+"register_screen_password_placeholder" = "Пароль";
+"register_screen_conditions_full" = "Нажимая кнопку регистрации вы принимаете условия Пользовательского соглашения";
+"register_screen_registration" = "Зарегистрироваться";
+"register_screen_auth_full" = "Есть аккаунт? Войти";
+"register_screen_conditions_user_agreement" = "Пользовательского соглашения";
+"register_screen_auth" = "Войти";
+
+// Экран сброса пароля
+"password_recovery_title" = "Забыли пароль?";
+"password_recovery_subtitle" = "Введите привязанный к аккаунту E-mail и получи по почте новый пароль для входа";
+"password_recovery_auth" = "Выслать новый пароль";
+"password_recovery_email_placeholder" = "E-Mail";
+"password_recovery_auth_full" = "Вспомнили пароль? Войти";
 // Экран "Цели"
 "planner_screen_title" = "Цели";
 "planner_screen_new_taskgroup" = "Новый список";
