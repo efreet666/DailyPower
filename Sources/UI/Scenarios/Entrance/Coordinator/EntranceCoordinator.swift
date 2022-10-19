@@ -40,7 +40,7 @@ final class EntranceCoordinator: ViewCoordinator<EntranceRoute> {
         case .registration:
             return embedPresentable(registrationAssembly.viewController(router: anyRouter))
         case .passwordRecovery:
-            return .none()
+            return embedPresentable(passwordRecoveryAssembly.viewController(router: anyRouter))
         case .userAgreement:
             let module = documentViewerPresentableAssembly.presentable(for: .userAgreement, parentRouter: mapper())
             return .present(module)
@@ -79,4 +79,5 @@ final class EntranceCoordinator: ViewCoordinator<EntranceRoute> {
     private lazy var authorizationAssembly = AuthorizationAssembly.instance()
     private lazy var documentViewerPresentableAssembly = DocumentViewerPresentableAssembly.instance()
     private lazy var registrationAssembly = RegistrationAssembly.instance()
+    private lazy var passwordRecoveryAssembly = PasswordRecoveryAssembly.instance()
 }

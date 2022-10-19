@@ -39,6 +39,12 @@
 "register_screen_conditions_user_agreement" = "Пользовательского соглашения";
 "register_screen_auth" = "Войти";
 
+// Экран сброса пароля
+"password_recovery_title" = "Забыли пароль?";
+"password_recovery_subtitle" = "Введите привязанный к аккаунту E-mail и получи по почте новый пароль для входа";
+"password_recovery_auth" = "Выслать новый пароль";
+"password_recovery_email_placeholder" = "E-Mail";
+"password_recovery_auth_full" = "Вспомнили пароль? Войти";
 // Экран "Цели"
 "planner_screen_title" = "Цели";
 "planner_screen_new_taskgroup" = "Новый список";

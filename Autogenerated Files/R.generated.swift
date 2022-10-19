@@ -431,7 +431,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 10 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 11 storyboards.
   struct storyboard {
     /// Storyboard `Authorization`.
     static let authorization = _R.storyboard.authorization()
@@ -443,6 +443,8 @@ struct R: Rswift.Validatable {
     static let motivation = _R.storyboard.motivation()
     /// Storyboard `Nutrition`.
     static let nutrition = _R.storyboard.nutrition()
+    /// Storyboard `PasswordRecovery`.
+    static let passwordRecovery = _R.storyboard.passwordRecovery()
     /// Storyboard `Planner`.
     static let planner = _R.storyboard.planner()
     /// Storyboard `Profile`.
@@ -479,6 +481,11 @@ struct R: Rswift.Validatable {
       return UIKit.UIStoryboard(resource: R.storyboard.nutrition)
     }
     
+    /// `UIStoryboard(name: "PasswordRecovery", bundle: ...)`
+    static func passwordRecovery(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.passwordRecovery)
+    }
+    
     /// `UIStoryboard(name: "Planner", bundle: ...)`
     static func planner(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.planner)
@@ -509,10 +516,12 @@ struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 90 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 95 localization keys.
     struct localizable {
       /// Value: E-Mail
       static let auth_screen_email_placeholder = Rswift.StringResource(key: "auth_screen_email_placeholder", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: E-Mail
+      static let password_recovery_email_placeholder = Rswift.StringResource(key: "password_recovery_email_placeholder", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: E-Mail
       static let register_screen_email_placeholder = Rswift.StringResource(key: "register_screen_email_placeholder", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Next
@@ -521,10 +530,14 @@ struct R: Rswift.Validatable {
       static let alert_button_ok = Rswift.StringResource(key: "alert_button_ok", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: ВХОД В АККАУНТ
       static let auth_screen_title = Rswift.StringResource(key: "auth_screen_title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Введите привязанный к аккаунту E-mail и получи по почте новый пароль для входа
+      static let password_recovery_subtitle = Rswift.StringResource(key: "password_recovery_subtitle", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Войти
       static let auth_screen_login = Rswift.StringResource(key: "auth_screen_login", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Войти
       static let register_screen_auth = Rswift.StringResource(key: "register_screen_auth", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Вспомнили пароль? Войти
+      static let password_recovery_auth_full = Rswift.StringResource(key: "password_recovery_auth_full", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Вы действительно хотите удалить задачу?
       static let taskgroup_screen_delete_task_message = Rswift.StringResource(key: "taskgroup_screen_delete_task_message", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Вы действительно хотите удалить цель?
@@ -535,12 +548,16 @@ struct R: Rswift.Validatable {
       static let error_message_invalid_parameters = Rswift.StringResource(key: "error_message_invalid_parameters", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Выполнен запрос с некорректным токеном.
       static let error_message_invalid_token = Rswift.StringResource(key: "error_message_invalid_token", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Выслать новый пароль
+      static let password_recovery_auth = Rswift.StringResource(key: "password_recovery_auth", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Да
       static let alert_button_yes = Rswift.StringResource(key: "alert_button_yes", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Есть аккаунт? Войти
       static let register_screen_auth_full = Rswift.StringResource(key: "register_screen_auth_full", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Забыли пароль?
       static let auth_screen_password_recovery = Rswift.StringResource(key: "auth_screen_password_recovery", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Забыли пароль?
+      static let password_recovery_title = Rswift.StringResource(key: "password_recovery_title", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Загрузка задач
       static let taskgroup_screen_loading = Rswift.StringResource(key: "taskgroup_screen_loading", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Загрузка контента
@@ -698,6 +715,11 @@ struct R: Rswift.Validatable {
       }
       
       /// Value: E-Mail
+      static func password_recovery_email_placeholder(_: Void = ()) -> String {
+        return NSLocalizedString("password_recovery_email_placeholder", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: E-Mail
       static func register_screen_email_placeholder(_: Void = ()) -> String {
         return NSLocalizedString("register_screen_email_placeholder", bundle: R.hostingBundle, comment: "")
       }
@@ -717,6 +739,11 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("auth_screen_title", bundle: R.hostingBundle, comment: "")
       }
       
+      /// Value: Введите привязанный к аккаунту E-mail и получи по почте новый пароль для входа
+      static func password_recovery_subtitle(_: Void = ()) -> String {
+        return NSLocalizedString("password_recovery_subtitle", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// Value: Войти
       static func auth_screen_login(_: Void = ()) -> String {
         return NSLocalizedString("auth_screen_login", bundle: R.hostingBundle, comment: "")
@@ -725,6 +752,11 @@ struct R: Rswift.Validatable {
       /// Value: Войти
       static func register_screen_auth(_: Void = ()) -> String {
         return NSLocalizedString("register_screen_auth", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: Вспомнили пароль? Войти
+      static func password_recovery_auth_full(_: Void = ()) -> String {
+        return NSLocalizedString("password_recovery_auth_full", bundle: R.hostingBundle, comment: "")
       }
       
       /// Value: Вы действительно хотите удалить задачу?
@@ -752,6 +784,11 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("error_message_invalid_token", bundle: R.hostingBundle, comment: "")
       }
       
+      /// Value: Выслать новый пароль
+      static func password_recovery_auth(_: Void = ()) -> String {
+        return NSLocalizedString("password_recovery_auth", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// Value: Да
       static func alert_button_yes(_: Void = ()) -> String {
         return NSLocalizedString("alert_button_yes", bundle: R.hostingBundle, comment: "")
@@ -765,6 +802,11 @@ struct R: Rswift.Validatable {
       /// Value: Забыли пароль?
       static func auth_screen_password_recovery(_: Void = ()) -> String {
         return NSLocalizedString("auth_screen_password_recovery", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: Забыли пароль?
+      static func password_recovery_title(_: Void = ()) -> String {
+        return NSLocalizedString("password_recovery_title", bundle: R.hostingBundle, comment: "")
       }
       
       /// Value: Загрузка задач
@@ -1309,6 +1351,7 @@ struct _R: Rswift.Validatable {
       try launchScreen.validate()
       try motivation.validate()
       try nutrition.validate()
+      try passwordRecovery.validate()
       try planner.validate()
       try profile.validate()
       try registration.validate()
@@ -1407,6 +1450,28 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, *) {
         }
         if _R.storyboard.nutrition().initial() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'initial' could not be loaded from storyboard 'Nutrition' as 'NutritionViewController'.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct passwordRecovery: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = PasswordRecoveryViewController
+      
+      let bundle = R.hostingBundle
+      let initial = StoryboardViewControllerResource<PasswordRecoveryViewController>(identifier: "Initial")
+      let name = "PasswordRecovery"
+      
+      func initial(_: Void = ()) -> PasswordRecoveryViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: initial)
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "Common/background", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Common/background' is used in storyboard 'PasswordRecovery', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Common/logo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Common/logo' is used in storyboard 'PasswordRecovery', but couldn't be loaded.") }
+        if #available(iOS 11.0, *) {
+        }
+        if _R.storyboard.passwordRecovery().initial() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'initial' could not be loaded from storyboard 'PasswordRecovery' as 'PasswordRecoveryViewController'.") }
       }
       
       fileprivate init() {}
